@@ -15,9 +15,10 @@
     <li>5분 후 <strong>맛있게</strong> 먹는다.</li>
 </ol>
 <script>
-    window.onload = function (){
-        let a = document.getElementsByTagName("li");
-        a.style.color = 'green';
+    let a = document.getElementsByTagName("li");
+    for(let i = 0; i < a.length; i++){
+        let li = a[i];
+        li.style.color = "green";
     }
 </script>
 </body>
