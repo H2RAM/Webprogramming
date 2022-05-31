@@ -8,13 +8,13 @@
  
     window.onclick = function(e)
     {
-        if(e.target.tagName.toLowerCase() != "li")
+        if(e.target.tagName.toLowerCase() == "li")
         {
-            return;
+            e.target.style.fontSize = "1.3em";
         }
         else
         { 
-            e.target.style.fontSize = "1.3em";
+            return;
         }
         if(prev != null)
         {
