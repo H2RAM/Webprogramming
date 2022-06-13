@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>1</title>
+</head>
+<body>
+<script>
+function big(a, b, c) {
+    let max = a;
+    if(a < b){
+        if(b < c){
+            max = c;
+        }
+        else{
+            max = b;
+        }
+    }
+    else{
+        if(a < c){
+            if(b < c){
+                max = c;
+            }
+            else{
+                max = b;
+            }
+        }
+        else{
+            max = a;
+        }
+    }
+    return max;
+}
+</script>
+<script>
+   let b = big("625", "555", "754");
+   document.write("가장 큰수=", b);
+</script>
+</body>
+</html>
